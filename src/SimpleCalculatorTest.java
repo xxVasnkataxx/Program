@@ -23,5 +23,32 @@ class SimpleCalculatorTest {
         assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    void multiplicationBetweenTwoAndFive() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        int expectedResult = 10;
+        int actualResult;
+        actualResult = calculator.multiplication( 2,  5);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void divisionBetweenTenAndTwo() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        int expectedResult = 5;
+        int actualResult;
+        actualResult = calculator.multiplication( 10,  2);
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void divisionBetweenThreeAndZero() {
+        SimpleCalculator calculator = new SimpleCalculator();
+        Exception expectedResult = new Exception();
+        int actualResult;
+        actualResult = calculator.multiplication( 3,  0);
+        assertEquals(expectedResult, actualResult);
+    }
+
 
 }
