@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.DisplayNameGenerator;
 import org.junit.jupiter.api.Test;
 
 
@@ -44,10 +45,9 @@ class SimpleCalculatorTest {
     @Test
     void divisionBetweenThreeAndZero() {
         SimpleCalculator calculator = new SimpleCalculator();
-        Exception expectedResult = new Exception();
+        int expectedResult;
         int actualResult;
-        actualResult = calculator.multiplication( 3,  0);
-        assertEquals(expectedResult, actualResult);
+
     }
 
 

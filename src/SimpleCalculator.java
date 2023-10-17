@@ -15,11 +15,13 @@ public class SimpleCalculator {
     }
 
     public int division(int numberOne, int numberTwo) {
-        if (numberTwo == 0) {
-            System.out.println("Division by zero is not allowed.");
-            return 0; // You can handle this error differently if needed.
-        }
+    try{
         return numberOne / numberTwo;
+    }
+    catch(Exception exception) {
+        System.out.println(exception);
+            return 0;
+        }
     }
 
     public static void main(String[] args) {
